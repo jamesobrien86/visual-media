@@ -11,24 +11,29 @@ const iframeOne = {
 }
 
 
-export default function ScreenTwo(props){
+export default function ScreenFive(props){
     return(
         <div className="container">
             <Header isBack={true}>
-                Screen Two
+                Screen Five
             </Header>
             <Container>
                <Grid container direction="row">
-                   <Grid item sm={12}>
+                   <Grid item sm={8}>
                        <Grid container direction="row">
-                           <Grid item sm={6}>
-                                <IframeBlock pos="top" height="500" title={iframeOne.title} desc={iframeOne.desc} url={iframeOne.iframe} /> 
+                           <Grid item sm={12}>
+                                <IframeBlock pos="top" height="200" title={iframeOne.title} desc={iframeOne.desc} url={iframeOne.iframe} /> 
                            </Grid>
-                           <Grid item sm={6}>
-                                <IframeBlock pos="top" height="500"  title={iframeOne.title} desc={iframeOne.desc} url={iframeOne.iframe} /> 
+                           <Grid item sm={12}>
+                                <IframeBlock pos="top" height="375"  title={iframeOne.title} desc={iframeOne.desc} url={iframeOne.iframe} /> 
                            </Grid>
                        </Grid>
-                   </Grid>                   
+                   </Grid>
+                   <Grid item sm={4}>
+                            <Grid item sm={12}>
+                                <IframeBlock pos="left" height="600" title={iframeOne.title} desc={iframeOne.desc} url={iframeOne.iframe} /> 
+                           </Grid>
+                   </Grid>
                </Grid>
                    
             </Container>

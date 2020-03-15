@@ -14,7 +14,7 @@ const iframeOne = {
 export default function ScreenThree(props){
     return(
         <div className="container">
-            <Header>
+            <Header isBack={true}>
                 Screen Three
             </Header>
             <Container>

@@ -14,7 +14,7 @@ const iframeOne = {
 export default function ScreenOne(props){
     return(
         <div className="container">
-            <Header>
+            <Header isBack={true}>
                 Screen One
             </Header>
             <Container>
