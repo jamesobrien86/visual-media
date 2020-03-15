@@ -1,0 +1,29 @@
+.screen-selector-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .screen-holder{
+        flex-direction: column;
+        display:flex;
+        background-color: #7969D0;
+        border-radius: 5px;
+        width: 80px;
+        height: 80px;
+        border:1px solid #00DBD8;
+        margin: 10px;
+        position: relative;
+        span{
+            font-size: 25px;
+            color:#fff;
+            position: absolute;
+            left:0;
+            right: 0;
+            top:0;
+            bottom:0;
+            margin: auto;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,148 @@
+.iframe-block-container{
+    margin: 0px 10px 0px 10px;
+    .iframe-title{
+        position: relative;
+        z-index: 2;
+        padding: 0px;
+        padding: 0px 0;
+        display: inline-block;
+        margin-bottom: 0px;
+        &:after{
+            content: "";
+            width: 100%;
+            position: relative;
+            top: -7px;
+            background-color: #00DBD8;
+            border-radius: 24px;
+            height: 2px;
+            display: inline-block;
+        }
+        .show-more{
+            display: inline-block;
+            margin-right: 10px;
+            cursor: pointer;
+            &:hover{
+                svg{
+                    color:#36364D;
+                }
+            }
+            svg{
+                color: #fff;
+            }
+        }
+        span{
+            font-size: 20px;
+            color:#fff;
+        }
+    }
+    .iframe-holder{
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        padding: 20px;
+        background-color: #36364D;
+        border-radius: 5px;
+        border: 2px solid #4D4D79;
+        box-shadow: 5px 5px 40px 20px rgba(77,77,121,0.45);
+        
+    &.top{
+            margin-bottom: 5px;
+            .show{
+                &.iframe-desc{
+                    top:0px;
+                }
+            }
+            
+        }
+        &.left{
+            .show{
+                &.iframe-desc{
+                    right:0%;
+                }
+            }
+        }
+        &.top{
+            .iframe-desc{
+                top:-105%;
+            }
+        }
+        &.left{
+            .iframe-desc{
+                right: -101%;
+            }
+        }
+        .iframe-desc{
+            position: absolute;
+            background-color: #52556C;
+            left:0px;
+            bottom: 0px;
+            transition: all 0.5s ease;
+            width: 100%;
+            opacity: 0.95;
+    
+            
+          
+        }
+    }
+    .iframe-holder{
+        
+    }
+    
+    
+    
+    .text-container{
+        position: relative;
+        
+    }
+    
+    .iframe-desc p{
+        font-size: 18px;
+        color:#fff;
+        position: absolute;
+        left:0;
+        top:0;
+        bottom: 0;
+        right:0;
+        margin: auto;
+        height: calc(100% - 25%);
+        width: calc(100% - 50%);
+    }
+    
+    .frame-vis{
+        overflow: hidden;
+        background-color: #36364D;
+    
+    }
+    .frame-vis.loading-frame:after{
+        content:"";
+        height: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top:0;
+        bottom:0;
+        background-color: #52556C;
+    }
+    .frame-vis.loading-frame{
+        opacity: 0.2;
+        transition: all 0.5s ease;
+    }
+    .frame-vis.loading{
+        opacity: 1;
+    }
+    .frame-vis.loading:after{
+        display: none;
+    }
+    
+    
+    
+    .loading{
+        position: absolute;
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
+        margin: auto;
+        text-align: center;
+    }
+}
