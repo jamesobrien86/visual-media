@@ -1,7 +1,7 @@
 @font-face(DINNextLTW23-Regular, public/DINNextLTW23-Regular, null, null, woff);
 
 
-
+/* 
 
 @font-face {
   font-family: 'DINNextLTW23-Regular';
@@ -12,7 +12,7 @@
        url('/public/fonts/DINNextLTW23-Regular#fDIN-Next-LT-W23') format('svg');
   font-weight: normal;
   font-style: normal;
-}
+} */
 
 
 body {

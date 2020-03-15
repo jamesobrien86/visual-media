@@ -6,8 +6,8 @@ import {
   history,
   Link
 } from "react-router-dom";
+import GlobalFonts from './assets/fonts/';
 
-import { Button } from '@material-ui/core'
 import Header from './components/Header'
 import './app.scss'
 
@@ -24,7 +24,8 @@ import ScreenEight from './domains/screenEight'
 
 export default function App() {
   return (
-     <div className="main-container">       
+     <div className="main-container"> 
+     <GlobalFonts />     
       <Router>      
           {/* A <Switch> looks through its children <Route>s and
               renders the first one that matches the current URL. */}         
