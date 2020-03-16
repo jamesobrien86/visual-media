@@ -22,7 +22,7 @@ export default function ScreenThree(props){
                    <Grid item sm={12}>
                        <Grid container direction="row">
                            <Grid item sm={12}>
-                                <IframeBlock pos="top" height="500" title={iframeOne.title} desc={iframeOne.desc} url={iframeOne.iframe} /> 
+                                <IframeBlock pos="top" height="600" title={iframeOne.title} desc={iframeOne.desc} url={iframeOne.iframe} /> 
                            </Grid>                          
                        </Grid>
                    </Grid>                   
