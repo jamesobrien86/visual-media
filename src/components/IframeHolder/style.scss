@@ -78,7 +78,7 @@
         &.top{
             height: calc(50vh - 90px);
             .iframe-desc{
-                top:-150%;
+                top:-200%;
                 height: calc(50vh - 90px);
             }
         }
@@ -86,7 +86,7 @@
             height: calc(100vh - 131px);
 
             .iframe-desc{
-                right: -101%;
+                right: -200%;
                 height: calc(100vh - 131px);
             }
         }
@@ -94,7 +94,7 @@
             height: calc(100vh - 131px);
 
             .iframe-desc{
-                right: -101%;
+                right: -200%;
                 height: calc(100vh - 131px);
             }
         }
@@ -102,7 +102,7 @@
             height: calc(100vh - 131px);
 
             .iframe-desc{
-                right: -101%;
+                right: -200%;
                 height: calc(100vh - 131px);
             }
         }
@@ -147,6 +147,7 @@
     .frame-vis{
         overflow: hidden;
         background-color: #36364D;
+        height: 100%;
     
     }
     .frame-vis.loading-frame:after{
