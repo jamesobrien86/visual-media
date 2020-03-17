@@ -23,18 +23,18 @@ export default function ScreenFour(props){
                        <Grid container direction="row">
                            <Grid item sm={6}>
                                 <Grid item sm={12}>
-                                    <IframeBlock pos="top" height="200" title={iframeOne.title} desc={iframeOne.desc} url={iframeOne.iframe} /> 
+                                    <IframeBlock  height="50" title={iframeOne.title} desc={iframeOne.desc} url={iframeOne.iframe} /> 
                                </Grid>
                                <Grid item sm={12}>
-                                <IframeBlock pos="top" height="375"  title={iframeOne.title} desc={iframeOne.desc} url={iframeOne.iframe} /> 
+                                <IframeBlock height="50"  title={iframeOne.title} desc={iframeOne.desc} url={iframeOne.iframe} /> 
                                 </Grid>
                            </Grid>
                            <Grid item sm={6}>
                                 <Grid item sm={12}>
-                                    <IframeBlock pos="top" height="200" title={iframeOne.title} desc={iframeOne.desc} url={iframeOne.iframe} /> 
+                                    <IframeBlock height="50" title={iframeOne.title} desc={iframeOne.desc} url={iframeOne.iframe} /> 
                                </Grid>
                                <Grid item sm={12}>
-                                <IframeBlock pos="top" height="375"  title={iframeOne.title} desc={iframeOne.desc} url={iframeOne.iframe} /> 
+                                <IframeBlock  height="50"  title={iframeOne.title} desc={iframeOne.desc} url={iframeOne.iframe} /> 
                                 </Grid>
                            </Grid>
                            

@@ -25,13 +25,13 @@ export default function IframeHolder(props){
 
     return(
         <div className="iframe-block-container">
-        <div className="iframe-title">               
+            <div className="iframe-title">               
                 <span>{props.title}</span>
                 <div className="show-more" onClick={() => showDesc() } >
                    <InfoIcon />
                 </div> 
             </div>
-        <div className={`iframe-holder ${props.pos}`}>                     
+        <div className={`iframe-holder`} style={{height:"calc(" + props.height + "vh - " + 90 + "px)"  }}>               
             <div className={`iframe-desc ${(show)? "show":""}`} onClick={() => hideDesc()}>
                 <div className="text-container">
                     <p>{props.desc}</p>

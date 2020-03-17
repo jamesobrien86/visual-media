@@ -43,77 +43,24 @@
         background-color: #36364D;
         border-radius: 5px;
         border: 2px solid #4D4D79;
-        box-shadow: 5px 5px 40px 20px rgba(77,77,121,0.45);
-        
-    &.top{
-            margin-bottom: 5px;
-            .show{
-                &.iframe-desc{
-                    top:0px;
-                }
-            }
-            
-        }
-        &.left{
-            .show{
-                &.iframe-desc{
-                    right:0%;
-                }
-            }
-        }
-        &.right{
-            .show{
-                &.iframe-desc{
-                    right:0%;
-                }
-            }
-        }
-        &.center{
-            .show{
-                &.iframe-desc{
-                    right:0%;
-                }
-            }
-        }
-        &.top{
-            height: calc(50vh - 90px);
-            .iframe-desc{
-                top:-200%;
-                height: calc(50vh - 90px);
-            }
-        }
-        &.left{
-            height: calc(100vh - 131px);
+        box-shadow: 5px 5px 40px 20px rgba(77,77,121,0.45);        
+       
+    
 
-            .iframe-desc{
-                right: -200%;
-                height: calc(100vh - 131px);
-            }
-        }
-        &.right{
-            height: calc(100vh - 131px);
-
-            .iframe-desc{
-                right: -200%;
-                height: calc(100vh - 131px);
-            }
-        }
-        &.center{
-            height: calc(100vh - 131px);
-
-            .iframe-desc{
-                right: -200%;
-                height: calc(100vh - 131px);
-            }
-        }
         .iframe-desc{
             position: absolute;
             background-color: #52556C;
             left:0px;
             bottom: 0px;
+            top:-200%;
             transition: all 0.5s ease;
             width: 100%;
             opacity: 0.95;
+            height: 100%;
+            &.show{
+                top:0%
+            }
+
     
             
           
@@ -142,6 +89,7 @@
         height: 50%;
         width: 50%;
         margin: auto;
+        transform: translateY(-20%);
     }
     
     .frame-vis{
