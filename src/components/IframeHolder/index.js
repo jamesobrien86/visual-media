@@ -31,9 +31,9 @@ export default function IframeHolder(props){
                    <InfoIcon />
                 </div> 
             </div>
-        <div className={`iframe-holder ${props.pos}`} style={{height: props.height - 20 + 'px'}}>                     
-            <div className={`iframe-desc ${(show)? "show":""}`} style={{height: props.height - 20 + 'px'}} onClick={() => hideDesc()}>
-                <div className="text-container" style={{height: props.height + 'px'}}>
+        <div className={`iframe-holder ${props.pos}`}>                     
+            <div className={`iframe-desc ${(show)? "show":""}`} onClick={() => hideDesc()}>
+                <div className="text-container">
                     <p>{props.desc}</p>
                 </div>
             </div>
@@ -46,8 +46,8 @@ export default function IframeHolder(props){
                 fadeIn="none"
             />
             ) : null}
-            <div className={`frame-vis ${loading ? "loading-frame":"loaded"}`} style={{height: props.height - 20 + 'px'}}>
-                <iframe id={props.title} onLoad={() => hideSpinner()} width="100%" height={props.height - 60} src={props.url} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={false}></iframe>
+            <div className={`frame-vis ${loading ? "loading-frame":"loaded"}`} >
+                <iframe id={props.title} onLoad={() => hideSpinner()} width="100%" height="95%" src={props.url} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={false}></iframe>
             </div>
         </div>
         </div>
