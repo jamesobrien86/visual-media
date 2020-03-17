@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import Spinner from 'react-spinkit'
 import InfoIcon from '@material-ui/icons/Info';
 import './style.scss'
@@ -7,6 +7,12 @@ export default function IframeHolder(props){
 
     const [loading, setLoading] = useState(true);
     const [show, setShow] = useState(false);
+    const [anim, setAnim] = useState(false);
+
+
+    useEffect(() => {        
+        setAnim(true)
+    }, []);
 
 
     function hideSpinner (){
@@ -24,14 +30,14 @@ export default function IframeHolder(props){
     }
 
     return(
-        <div className="iframe-block-container">
+        <div className={`iframe-block-container  ${(anim === true) ? "loaded" :""} ${(props.pos !== undefined)?props.pos : "top"}`}>
             <div className="iframe-title">               
                 <span>{props.title}</span>
                 <div className="show-more" onClick={() => showDesc() } >
                    <InfoIcon />
                 </div> 
             </div>
-        <div className={`iframe-holder`} style={{height:"calc(" + props.height + "vh - " + 90 + "px)"  }}>               
+        <div className={`iframe-holder ${(props.pos !== undefined)?props.pos : "top"}`} style={{height:"calc(" + props.height + "vh - " + 75 + "px)"  }}>               
             <div className={`iframe-desc ${(show)? "show":""}`} onClick={() => hideDesc()}>
                 <div className="text-container">
                     <p>{props.desc}</p>

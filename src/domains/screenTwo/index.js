@@ -22,10 +22,10 @@ export default function ScreenTwo(props){
                    <Grid item sm={12}>
                        <Grid container direction="row">
                            <Grid item sm={6}>
-                                <IframeBlock height="93" title={iframeOne.title} desc={iframeOne.desc} url={iframeOne.iframe} /> 
+                                <IframeBlock height="95" title={iframeOne.title} desc={iframeOne.desc} url={iframeOne.iframe} /> 
                            </Grid>
                            <Grid item sm={6}>
-                                <IframeBlock height="93" title={iframeOne.title} desc={iframeOne.desc} url={iframeOne.iframe} /> 
+                                <IframeBlock height="95" title={iframeOne.title} desc={iframeOne.desc} url={iframeOne.iframe} /> 
                            </Grid>
                        </Grid>
                    </Grid>                   
