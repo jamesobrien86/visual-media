@@ -1,3 +1,7 @@
+## Visual Media
+This project was created to hold iframes to display visualisations from third party services.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
